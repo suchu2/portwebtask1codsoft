@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Project</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffc0cb; /* Light Pink Background */
+        }
+
+        /* Header Styles */
+        #header {
+            background-color: #007acc;
+            color: #fff;
+        }
+
+        /* Header link Styles */
+        #header a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        #header a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 20px;
+        }
+
+        /* Home Section Styles */
+        #home {
+            background-color: #333;
+            color: #fff;
+        }
+
+        #home h3 {
+            font-family: "Times New Roman", serif;
+            font-size: 36px;
+        }
+
+        /* About Section Styles */
+        #about {
+            background-color: #ffa07a; /* Light Salmon */
+        }
+
+        #about h2 {
+            font-size: 36px;
+        }
+
+        #about p {
+            font-size: 18px;
+        }
+
+        /* Contact Section Styles */
+        #contact {
+            background-color: #87ceeb; /* Sky Blue */
+        }
+
+        #contact h2 {
+            font-size: 36px;
+        }
+
+        /* Form Styles */
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #007acc;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Footer Styles */
+        #footer {
+            background-color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="header" border="0" width="100%" cellpadding="0" cellspacing="0">
+        <!-- ... Your header content ... -->
+    </table>
+    <div class="section" id="home">
+        <h3>Suchita Laxmanrao Patil Honshette</h3>
+    </div>
+    <div class="section" id="about">
+        <h2>About Me</h2>
+        <p>
+            Thanks for your interest..!!<br>
+            Suchita Laxmanrao Patil Honshette, an MIT Aurangabad third-year student.<br>
+            I studied C-Language, Python, and JAVA. Python is my stronger section.<br>
+            Thank you for reading this..!<br>
+            Cheers, <br>
+            <b>Suchita L.Patil Honshette.</b>
+        </p>
+    </div>
+    <div class="section" id="projects">
+        <h2>Projects</h2>
+        <p id="projectsContent"></p>
+    </div>
+    <div class="section" id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">suchupatil22@gmail.com</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="number">Number</label>
+            <input type="number" id="number" name="number" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="footer">
+        <p>
+            <b>LinkedIn</b> | <b>Email</b>
+        </p>
+    </div>
+
+    <script>
+        
+        const projectsContent = document.getElementById('projectsContent');
+        const projectsLink = document.querySelector('a[href="#projects"]');
+        
+        
+        projectsLink.addEventListener('click', () => {
+            projectsContent.innerText = 'Web Development, Android Development';
+           
+        });
+    </script>
+</body>
+
+</html>
